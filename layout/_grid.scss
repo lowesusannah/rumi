@@ -9,13 +9,8 @@ img {
   height: auto !important;
 }
 
-.card-wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.card-wrapper .row {
-
+.cards {
+  max-width: 100%;
 }
 
 .card-wrapper:after,

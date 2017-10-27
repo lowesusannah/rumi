@@ -5,20 +5,52 @@
   text-align: center;
 }
 
-@mixin medium-screen {
-  @media $breakpoint-medium {
+.card-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+  }
+
+//media queries
+@media #{$breakpoint-medium} {
+  .card-wrapper {
+    width: 95%;
+    max-width: $grid-max-width;
+    background-color: transparentize($grey, .5);
+    margin-bottom: 20px;
+  }
+  @for $i from 1 through 2 {
+    .column-#{$i} {
+      width:  100% / $grid-columns * $i;
+    }
   }
 }
 
-
-@media #{$breakpoint-medium} {
-  .wrapper {
+@media #{$breakpoint-large} {
+  .card-wrapper {
     width: 95%;
     max-width: $grid-max-width;
   }
-  @for $i from 1 through $grid-columns {
-    .column-#{i} {
+  @for $i from 1 through 3 {
+    .column-#{$i} {
       width: 100% / $grid-columns * $i;
     }
   }

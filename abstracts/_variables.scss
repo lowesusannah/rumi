@@ -12,5 +12,9 @@ $grey: #C5C0B0;
 $yellow-grey: #E9E4CF;
 
 //media queries
-$breakpoint-medium: "(min-width: 899px) and (max-width: 1200px)";
-$breakpoint-large: "(min-width 1201px)";
+$breakpoint-medium: "screen and (min-width: 600px) and (max-width: 1200px)";
+$breakpoint-large: "screen and (min-width 1201px)";
+
+//grid-related
+$grid-max-width: 100%;
+$grid-columns: 3;

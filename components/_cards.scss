@@ -1,13 +1,23 @@
 .card-wrapper {
-  width: 85%;
-  
+  width: 100%;
+  margin: 0 auto;
 }
 
-.cards {
-  padding: 1em;
-  border: 1em;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.card-image {
+.card-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='column-'] {
   float: left;
-}
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+  }

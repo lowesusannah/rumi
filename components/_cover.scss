@@ -1,7 +1,4 @@
 body {
-  @include grid-visual;
-  background-image: url('../img/coast.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: none;
+  // @include grid-visual;
+  background-color: $dusty-pink; 
 }

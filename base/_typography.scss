@@ -3,36 +3,47 @@ h1 {
   font-size: 5em;
   text-align: center;
   font-weight: bold;
-  color: $highlight-red;
-
+  color: $grey;
+  line-height: 2em;
 }
 h2 {
   @extend h1;
   font-size: 2em;
   font-weight: lighter;
   font-stretch: semi-condensed;
-  line-height: normal;
   font-family: 'Amiri', serif;
-  color: $almost-black;
+  color: $dusty-pink;
   text-align: left;
 }
 h3 {
   @extend h2;
-  font-size: 3.5em;
+  font-size: 3em;
   text-align: center;
   font-weight: lighter;
+  color: $almost-black;
 }
 
 h4 {
-
+  @extend h3;
+  font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+  color: white;
 }
 
 h5 {
-
+  @extend h4;
+  font: 1em;
+  text-align: center;
+  font-weight: normal;
+  color: $almost-black; 
 }
 
 h6 {
-
+  @extend h4;
+  font: .75em;
+  text-align: left;
+  font-weight: lighter;
 }
 
 p {
