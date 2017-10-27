@@ -1,0 +1,43 @@
+h1 {
+  @include font-face('Amiri', serif) {};
+  font-size: 5em;
+  text-align: center;
+  font-weight: bold;
+  color: $highlight-red;
+
+}
+h2 {
+  @extend h1;
+  font-size: 2em;
+  font-weight: lighter;
+  font-stretch: semi-condensed;
+  line-height: normal;
+  font-family: 'Amiri', serif;
+  color: $almost-black;
+  text-align: left;
+}
+h3 {
+  @extend h2;
+  font-size: 3.5em;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+  @font-face('open sans', serif) {};
+    font-size: 1em;
+    font-weight: normal;
+    font-stretch: semi-expanded;
+}
