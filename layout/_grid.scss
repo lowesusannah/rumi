@@ -1,0 +1,26 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.card-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-wrapper .row {
+
+}
+
+.card-wrapper:after,
+.row:after, {
+  content: "";
+  display: table;
+  clear: both;
+}
