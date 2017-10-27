@@ -1,9 +1,10 @@
 @mixin center {
   border-left: auto;
   border-right: auto;
+  display: block;
   text-align: center;
 }
 
 @mixin text-container {
-  
+
 }

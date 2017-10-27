@@ -1,6 +1,7 @@
 body {
-  background-image: url('../img/star-pattern.jpg');
+  @include grid-visual;
+  background-image: url('../img/coast.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: none;
 }
