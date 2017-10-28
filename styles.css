@@ -266,41 +266,35 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 5em;
   text-align: center;
   font-weight: bold;
-  color: #C5C0B0;
-  line-height: 2em; }
+  color: #1F1C1F; }
 @font-face {
   h1, h2, h3, h4, h5, h6 {
     font-family: "Amiri";
     src: url("serif.woff2") format("woff2"), url("serif.woff") format("woff"), url("serif.ttf") format("truetype"); } }
 h2, h3, h4, h5, h6 {
   font-size: 2em;
-  font-weight: lighter;
-  font-stretch: semi-condensed;
-  font-family: 'Amiri', serif;
-  color: #885B62;
+  color: black;
   text-align: left; }
 
 h3, h4, h5, h6 {
   font-size: 3em;
   text-align: center;
   font-weight: lighter;
-  color: #1F1C1F; }
+  color: #885B62; }
 
 h4, h5, h6 {
   font-size: 2em;
   text-align: center;
-  font-weight: normal;
   color: white; }
 
 h5 {
   font: 1em;
   text-align: center;
-  font-weight: normal;
   color: #1F1C1F; }
 
 h6 {
   font: .75em;
-  text-align: left;
+  text-align: center;
   font-weight: lighter; }
 
 p {
@@ -308,29 +302,6 @@ p {
   font-weight: normal;
   font-stretch: semi-expanded; }
 @font-face ('open sans', serif) {}
-body {
-  background-color: #885B62; }
-
-.card-wrapper {
-  width: 100%;
-  margin: 0 auto; }
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.card-wrapper::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-[class*='column-'] {
-  float: left;
-  padding: 1em;
-  width: 100%;
-  min-height: 1px; }
-
 *, *:after, *:before {
   margin: 0;
   padding: 0; }
@@ -350,9 +321,30 @@ img {
   clear: both; }
 
 .header {
-  width: 100vw; }
+  background-image: url("img/rooftops.jpeg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: color;
+  width: 100vw;
+  background-position: center; }
+  .header .subhead {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    padding: 10px; }
 
+@media screen and (min-width: 1201px) {
+  .header {
+    background-size: cover; } }
 .navigation {
-  background-color: #C5C0B0; }
+  background-color: #C5C0B0;
+  float: left;
+  display: inline-grid;
+  width: 100vw;
+  text-align: center;
+  padding: 1em;
+  height: 5em; }
 
 /*# sourceMappingURL=styles.css.map */

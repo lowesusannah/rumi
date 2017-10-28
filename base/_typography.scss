@@ -3,16 +3,12 @@ h1 {
   font-size: 5em;
   text-align: center;
   font-weight: bold;
-  color: $grey;
-  line-height: 2em;
+  color: $almost-black;
 }
 h2 {
   @extend h1;
   font-size: 2em;
-  font-weight: lighter;
-  font-stretch: semi-condensed;
-  font-family: 'Amiri', serif;
-  color: $dusty-pink;
+  color: darken($dusty-pink, 50%);
   text-align: left;
 }
 h3 {
@@ -20,14 +16,13 @@ h3 {
   font-size: 3em;
   text-align: center;
   font-weight: lighter;
-  color: $almost-black;
+  color: $dusty-pink;
 }
 
 h4 {
   @extend h3;
   font-size: 2em;
   text-align: center;
-  font-weight: normal;
   color: white;
 }
 
@@ -35,14 +30,13 @@ h5 {
   @extend h4;
   font: 1em;
   text-align: center;
-  font-weight: normal;
-  color: $almost-black; 
+  color: $almost-black;
 }
 
 h6 {
   @extend h4;
   font: .75em;
-  text-align: left;
+  text-align: center;
   font-weight: lighter;
 }
 

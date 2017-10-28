@@ -30,7 +30,7 @@
   }
 
 //media queries
-@media #{$breakpoint-medium} {
+@media #{$medium} {
   .card-wrapper {
     width: 95%;
     max-width: $grid-max-width;
@@ -44,7 +44,7 @@
   }
 }
 
-@media #{$breakpoint-large} {
+@media #{$large} {
   .card-wrapper {
     width: 95%;
     max-width: $grid-max-width;
