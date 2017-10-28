@@ -2,7 +2,7 @@
 
 #### _This is an application which demonstrates Sass features such media queries, partials, bourbon mixins, for loops and variables._
 
-#### _Oct. 20, 2017_
+#### _Oct. 27, 2017_
 
 #### By _**Susannah Lowe**_
 
