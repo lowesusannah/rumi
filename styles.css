@@ -233,9 +233,7 @@ hr {
 @media screen and (min-width: 600px) and (max-width: 1200px) {
   .card-wrapper {
     width: 95%;
-    max-width: 100%;
-    background-color: rgba(197, 192, 176, 0.5);
-    margin-bottom: 20px; }
+    max-width: 100%; }
 
   .column-1 {
     width: 33.3333333333%; }
@@ -266,21 +264,22 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 5em;
   text-align: center;
   font-weight: bold;
-  color: #1F1C1F; }
+  color: #04041A; }
 @font-face {
   h1, h2, h3, h4, h5, h6 {
     font-family: "Amiri";
     src: url("serif.woff2") format("woff2"), url("serif.woff") format("woff"), url("serif.ttf") format("truetype"); } }
 h2, h3, h4, h5, h6 {
   font-size: 2em;
-  color: black;
+  color: #100c0f;
   text-align: left; }
 
 h3, h4, h5, h6 {
   font-size: 3em;
   text-align: center;
-  font-weight: lighter;
-  color: #885B62; }
+  font-weight: normal;
+  color: #9D7E92;
+  line-height: normal; }
 
 h4, h5, h6 {
   font-size: 2em;
@@ -288,9 +287,10 @@ h4, h5, h6 {
   color: white; }
 
 h5 {
-  font: 1em;
+  font: .5em;
   text-align: center;
-  color: #1F1C1F; }
+  line-height: normal;
+  color: #04041A; }
 
 h6 {
   font: .75em;
@@ -302,6 +302,72 @@ p {
   font-weight: normal;
   font-stretch: semi-expanded; }
 @font-face ('open sans', serif) {}
+a {
+  font-size: .75em;
+  font-weight: lighter;
+  color: #C7D9E9;
+  text-decoration: none; }
+
+.cards {
+  width: 100%; }
+
+.card {
+  background-color: #b39baa;
+  border: 1px solid #9D7E92;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px white;
+  cursor: pointer;
+  flex-basis: 15em;
+  flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out; }
+  .card .card-image {
+    background-color: #9D7E92;
+    height: 150px;
+    max-height: 300px; }
+    .card .card-image img {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      opacity: 0.5;
+      transition: all .02s ease-in;
+      width: 100%; }
+  .card .card-header {
+    background-color: #b39baa;
+    border-bottom: 1px solid #9D7E92;
+    border-radius: 3px 3px 0 0;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em;
+    transition: all 0.2s ease-in-out; }
+  .card .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 0.75em 0.75em; }
+    .card .card-copy p {
+      margin: 0 0 0.75em; }
+  .card:focus, .card:hover {
+    cursor: pointer; }
+    .card:focus img, .card:hover img {
+      opacity: 0.7; }
+  .card:active {
+    background-color: #b39baa; }
+    .card:active .card-header {
+      background-color: #b39baa; }
+
+.quote {
+  width: 100%;
+  height: 200px;
+  background-color: blue;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.char11, .char12 {
+  text-align: center;
+  font-size: 2em;
+  z-index: -1000;
+  color: #C7D9E9; }
+
 *, *:after, *:before {
   margin: 0;
   padding: 0; }
@@ -310,9 +376,6 @@ img {
   width: auto;
   max-width: 100%;
   height: auto !important; }
-
-.cards {
-  max-width: 100%; }
 
 .card-wrapper:after,
 .row:after {
@@ -339,7 +402,7 @@ img {
   .header {
     background-size: cover; } }
 .navigation {
-  background-color: #C5C0B0;
+  background-color: #2B2832;
   float: left;
   display: inline-grid;
   width: 100vw;

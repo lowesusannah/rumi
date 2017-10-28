@@ -15,8 +15,9 @@ h3 {
   @extend h2;
   font-size: 3em;
   text-align: center;
-  font-weight: lighter;
+  font-weight: normal;
   color: $dusty-pink;
+  line-height: normal;
 }
 
 h4 {
@@ -28,8 +29,9 @@ h4 {
 
 h5 {
   @extend h4;
-  font: 1em;
+  font: .5em;
   text-align: center;
+  line-height: normal;
   color: $almost-black;
 }
 
@@ -45,4 +47,11 @@ p {
     font-size: 1em;
     font-weight: normal;
     font-stretch: semi-expanded;
+}
+
+a {
+  font-size: .75em;
+  font-weight: lighter;
+  color: $white-grey;
+  text-decoration: none;
 }

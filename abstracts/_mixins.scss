@@ -34,8 +34,6 @@
   .card-wrapper {
     width: 95%;
     max-width: $grid-max-width;
-    background-color: transparentize($grey, .5);
-    margin-bottom: 20px;
   }
   @for $i from 1 through 2 {
     .column-#{$i} {
