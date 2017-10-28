@@ -1,60 +1,36 @@
 //Bourbon Refill Patterns: Cards
-.cards {
-  width: 100%;
-}
 
 .card {
-  // $base-border-color: gainsboro !default;
-  $base-border-radius: 3px !default;
-  $base-background-color: white !default;
-  $base-spacing: 1.5em !default;
-  $action-color: black !default;
-  $dark-gray: #333 !default;
-  $base-font-color: white !default;
   $card-border: 1px solid $dusty-pink;
   $card-background: lighten($dusty-pink, 10%);
-  $card-header-background: $card-background;
   $card-margin: 1em;
-  $card-image-hover-opacity: 0.7;
-  $card-image-hover-color: $dusty-pink;
   background-color: $card-background;
   border: $card-border;
   border-radius: $base-border-radius;
   box-shadow: 0 2px 4px lighten($base-background-color, 10%);
   cursor: pointer;
-  flex-basis: 15em;
-  flex-grow: 1;
-  margin: 0 $card-margin $base-spacing $card-margin;
-  position: relative;
+  margin: 10px;
   transition: all 0.2s ease-in-out;
 
   .card-image {
-    background-color: $card-image-hover-color;
-    height: 150px;
-    max-height: 300px;
+    background-color: $dusty-pink;
 
     img {
       @include border-top-radius($base-border-radius);
       opacity: 0.5;
       transition: all .02s ease-in;
-      width: 100%;
     }
   }
 
   .card-header {
-    background-color: $card-header-background;
-    border-bottom: $card-border;
-    border-radius: $base-border-radius $base-border-radius 0 0;
-    line-height: 1.5em;
-    padding: ($base-spacing / 3) ($base-spacing / 2);
-    transition: all 0.2s ease-in-out;
+    background-color: $dusty-pink;
+    border-bottom: $dusty-pink;
+    // border-radius: 1px;
+    // transition: all 0.2s ease-in-out;
   }
 
   .card-copy {
-    font-size: 0.9em;
-    line-height: 1.5em;
-    padding: ($base-spacing / 2) ($base-spacing / 2);
-
+    font-size: .5em;
     p {
       margin: 0 0 ($base-spacing / 2);
     }
@@ -65,15 +41,15 @@
     cursor: pointer;
 
     img {
-      opacity: $card-image-hover-opacity;
+      opacity: 0.7;
     }
   }
 
   &:active {
-    background-color: $card-background;
+    background-color: $orange;
 
     .card-header {
-      background-color: $card-background;
+      background-color: $periwinkle;
     }
   }
 }

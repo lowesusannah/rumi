@@ -293,7 +293,7 @@ h5 {
   color: #04041A; }
 
 h6 {
-  font: .75em;
+  font: .3em;
   text-align: center;
   font-weight: lighter; }
 
@@ -308,41 +308,26 @@ a {
   color: #C7D9E9;
   text-decoration: none; }
 
-.cards {
-  width: 100%; }
-
 .card {
   background-color: #b39baa;
   border: 1px solid #9D7E92;
   border-radius: 3px;
   box-shadow: 0 2px 4px white;
   cursor: pointer;
-  flex-basis: 15em;
-  flex-grow: 1;
-  margin: 0 1em 1.5em 1em;
-  position: relative;
+  margin: 10px;
   transition: all 0.2s ease-in-out; }
   .card .card-image {
-    background-color: #9D7E92;
-    height: 150px;
-    max-height: 300px; }
+    background-color: #9D7E92; }
     .card .card-image img {
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       opacity: 0.5;
-      transition: all .02s ease-in;
-      width: 100%; }
+      transition: all .02s ease-in; }
   .card .card-header {
-    background-color: #b39baa;
-    border-bottom: 1px solid #9D7E92;
-    border-radius: 3px 3px 0 0;
-    line-height: 1.5em;
-    padding: 0.5em 0.75em;
-    transition: all 0.2s ease-in-out; }
+    background-color: #9D7E92;
+    border-bottom: #9D7E92; }
   .card .card-copy {
-    font-size: 0.9em;
-    line-height: 1.5em;
-    padding: 0.75em 0.75em; }
+    font-size: .5em; }
     .card .card-copy p {
       margin: 0 0 0.75em; }
   .card:focus, .card:hover {
@@ -350,23 +335,26 @@ a {
     .card:focus img, .card:hover img {
       opacity: 0.7; }
   .card:active {
-    background-color: #b39baa; }
+    background-color: #6E450E; }
     .card:active .card-header {
-      background-color: #b39baa; }
+      background-color: #006C88; }
 
 .quote {
-  width: 100%;
-  height: 200px;
-  background-color: blue;
+  width: 85vw;
+  height: 300px;
   display: block;
+  padding: 1em;
+  margin-left: auto;
   margin-right: auto;
-  margin-left: auto; }
+  color: #C7D9E9; }
 
 .char11, .char12 {
   text-align: center;
-  font-size: 2em;
+  font-size: 10em;
+  line-height: 0em;
+  padding: 0em;
   z-index: -1000;
-  color: #C7D9E9; }
+  color: #6E450E; }
 
 *, *:after, *:before {
   margin: 0;
@@ -398,6 +386,9 @@ img {
     border-radius: 2px;
     padding: 10px; }
 
+@media screen and (max-width: 600px) {
+  .header {
+    background-size: contain; } }
 @media screen and (min-width: 1201px) {
   .header {
     background-size: cover; } }
