@@ -1,6 +1,6 @@
 # _Rumi Website_
 
-#### _This is an application which demonstrates Sass features such media queries, partials, bourbon mixins, for loops and variables. 
+#### _This is an application which demonstrates Sass features such media queries, partials, bourbon mixins, for loops and variables._
 
 #### _Oct. 20, 2017_
 
